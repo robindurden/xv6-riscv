@@ -1,0 +1,13 @@
+BasedOnStyle: LLVM
+AllowShortFunctionsOnASingleLine: false
+
+AlwaysBreakAfterReturnType: All
+PenaltyReturnTypeOnItsOwnLine: 0
+
+BraceWrapping:
+  AfterFunction: true # int\nmain()
+  AfterControlStatement: false # ← 关键！不要拆 if()
+  BeforeElse: false # else 不换行独立出现
+  SplitEmptyFunction: true
+
+BreakBeforeBraces: Custom
