@@ -13,3 +13,8 @@ git fetch
 git pull
 git push
 git checkout
+
+git branch -r
+git diff HEAD
+git reset --soft
+git checkout -b lab1 riscv

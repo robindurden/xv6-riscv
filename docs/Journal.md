@@ -11,3 +11,5 @@
 - Lec1: Intro syscall: copy、open
 #### 2025-12-02
 - Lec1: exec、fork、redirect, finished Lec1 video
+#### 2025-12-03
+- Lec1: homework
