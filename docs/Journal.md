@@ -13,3 +13,4 @@
 - Lec1: exec、fork、redirect, finished Lec1 video
 #### 2025-12-03
 - Lec1: homework
+- Lab1: Boot xv6

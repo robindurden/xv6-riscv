@@ -18,3 +18,4 @@ git branch -r
 git diff HEAD
 git reset --soft
 git checkout -b lab1 riscv
+git remote -v

@@ -1,0 +1,18 @@
+lab repo:
+git clone git://g.csail.mit.edu/xv6-labs-2025
+
+Create a new repo in github: https://github.com/new
+cd xv6-labs-2025
+git remote -v 
+git remote remove origin
+git remote add origin https://github.com/HERE SHOULE BE YOU NAME BRO/xv6-labs-2025.git
+git checkout -b master
+git push -u origin master
+git checkout util
+git push --set-upstream origin util
+
+xv6:
+make qemu
+ps   Ctrl-p
+quit Ctrl-a x
+pid  ps aux|grep qemu
