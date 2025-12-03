@@ -1,0 +1,19 @@
+For this lecture, read the xv6 implementation of a simple Unix program, cat, available here. 
+Q1: How does the system keep track of the connection between the string filename argv[i] passed to open(), 
+and the resulting integer file descriptor fd?
+
+After type cat in command line, System(OS) track the filename to integer fd by open syscall.
+shell process fork and exec the new process cat.
+cat's action decided by the arguments from shell.
+- no argument: cat choose connect to fd0: keyboard.
+- has arguments: cat open the file, and write to fd1: stdout - terminal.
+In C code, system provide the abstrace syscall for code.
+System designed by POSIX, abstract memory、CPU、storage to I/O、syscall、filesystem、process for program.
+
+Q2: What does the integer file descriptor number refer to?
+In POSIX:
+- 0 stdin
+- 1 stdout
+- 2 stderr
+- 3 opened file
+- 4 another opened file

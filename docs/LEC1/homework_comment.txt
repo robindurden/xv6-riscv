@@ -1,0 +1,19 @@
+Your answers indicate that you have some sense of what the user-level
+program does, but not a clear model of what the kernel does.
+Mixing shell behavior, argument parsing, and POSIX commentary obscures
+the main point: the question is about the kernel’s abstraction, not the
+user program’s behavior.
+
+In Q1, you didn’t separate user-level actions from the system call
+mechanism. The kernel doesn’t decide anything about “no arguments” or
+“keyboard input.” Those are decisions in cat or the shell. The kernel
+only maintains a per-process descriptor table; your answer doesn’t state
+this.
+
+In Q2, enumerating fd numbers is not an explanation of what a file
+descriptor is. The question is asking for the abstraction, not the
+conventions.
+
+Overall: effort is visible, but the conceptual boundaries between user
+space and kernel space are not yet sharp. Tighten your understanding of
+what the kernel actually provides.
