@@ -1,0 +1,92 @@
+========================
+ BASIC BUILD COMMANDS
+========================
+make
+make clean
+make qemu
+make qemu-fs
+make qemu-gdb
+make print-gdbport
+
+========================
+ GRADE TEST SUITE
+========================
+make grade
+./grade-lab-util sleep
+make GRADEFLAGS=sleep grade
+
+========================
+ VIEW TEST OUTPUT LOGS
+========================
+cat xv6.out.sleep
+cat xv6.out.sleep_no_args
+cat xv6.out.sleep_returns
+cat xv6.out.sleep_makes_syscall
+
+cat xv6.out.find_curdir
+cat xv6.out.find_subdir
+cat xv6.out.find_recursive
+cat xv6.out.find_exec
+cat xv6.out.find_exec_args
+cat xv6.out.test_find_sh
+
+cat xv6.out.sixfive_test
+cat xv6.out.sixfive_readme
+cat xv6.out.sixfive_all
+
+cat xv6.out.memdump_examples
+cat xv6.out.memdump_formats
+
+cat xv6.out.time
+
+========================
+ FILE SYSTEM IMAGE
+========================
+make newfs.img           # rebuild fs.img
+ls -l fs.img
+hexdump -C fs.img | less
+
+========================
+ USER PROGRAM DEBUG (manual)
+========================
+make qemu
+# inside xv6:
+$ sleep 10
+$ find . foo
+$ sixfive sixfive.txt
+$ memdump
+$ time ls
+
+========================
+ RELEVANT DIRECTORIES
+========================
+user/           # your sleep/find/sixfive/memdump/time go here
+kernel/         # kernel sources
+mkfs/           # filesystem builder
+conf/lab.mk     # LAB=util configuration
+grade-lab-util  # grading script
+
+========================
+ MAKEFILE EDITS YOU WILL NEED
+========================
+(Add user program)
+add in Makefile's UPROGS
+    UPROGS += user/_sleep
+    UPROGS += user/_find
+    UPROGS += user/_sixfive
+    UPROGS += user/_time
+    # _memdump is automatically added by LAB=util
+
+
+UEXTRA=
+ifeq ($(LAB),util)
+	UEXTRA += user/findtest.sh
+	UEXTRA += user/sixfive.txt
+	UPROGS += $U/_sleep         # Here!
+	UPROGS += $U/_memdump
+endif
+========================
+ OTHER UTILITIES
+========================
+riscv64-unknown-elf-gcc --version
+qemu-system-riscv64 --version

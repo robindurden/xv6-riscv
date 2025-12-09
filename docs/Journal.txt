@@ -1,4 +1,4 @@
-### Nov
+Nov
 #### 2025-11-28
 - Read Lec1 slides
 - Watch media: AT&T Archives: The UNIX Operating System https://b23.tv/aC60SCP
@@ -14,3 +14,5 @@
 #### 2025-12-03
 - Lec1: homework
 - Lab1: Boot xv6
+#### 2025-12-09
+- Getting started for Milk-V Duo S
