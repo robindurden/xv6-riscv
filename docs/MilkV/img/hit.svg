@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <g fill="none" stroke="#0A4FA0" stroke-width="25" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Outer gear -->
+    <path d="M400 70
+             a330 330 0 1 1 0 660
+             a330 330 0 1 1 0-660
+             M400 140
+             a260 260 0 1 1 0 520
+             a260 260 0 1 1 0-520" />
+
+    <!-- Cat face circle -->
+    <circle cx="400" cy="350" r="150"/>
+
+    <!-- Cat ears -->
+    <path d="M300 250 L255 180 L330 210 Z
+             M500 250 L545 180 L470 210 Z"/>
+
+    <!-- Eyes -->
+    <circle cx="350" cy="330" r="18" fill="#0A4FA0"/>
+    <circle cx="450" cy="330" r="18" fill="#0A4FA0"/>
+
+    <!-- Nose + mouth -->
+    <path d="M400 350
+             m-15 20 q15 20 30 0
+             M400 350 v10" stroke="#0A4FA0" stroke-width="15"/>
+
+    <!-- whiskers -->
+    <path d="M285 340 h70
+             M285 365 h70
+             M515 340 h-70
+             M515 365 h-70"/>
+
+    <!-- 1920 -->
+    <text x="400" y="430" font-size="55" text-anchor="middle" fill="#0A4FA0" stroke="none" font-family="Arial">1920</text>
+
+    <!-- HIT book shape -->
+    <path d="M260 510 H540 L560 555 H240 Z"/>
+    <rect x="310" y="520" width="180" height="50" stroke="#0A4FA0" fill="none" stroke-width="15"/>
+    <text x="400" y="560" font-size="60" text-anchor="middle" fill="#0A4FA0" stroke="none" font-family="Arial">HIT</text>
+
+    <!-- Chinese name -->
+    <text x="400" y="680" font-size="90" text-anchor="middle" fill="#0A4FA0" stroke="none" font-family="SimHei">
+      哈基米工业大学
+    </text>
+  </g>
+</svg>

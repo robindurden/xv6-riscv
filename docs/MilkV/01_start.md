@@ -1,6 +1,4 @@
 # 01 Start with MilkV-Duo S
-
-
 ## Documents
 #### Install CH343 driver first
 - Board: [MilkV-Duo S](https://milkv.io/zh/duo-s)
@@ -18,9 +16,9 @@
 Only conect pin in Header J3
 | TTL | DuoS |
 | --- | --- |
-| GND | 6 GND |
-| TXD | 10 A17 UART0_RX |
-| RXD | 8  A16 UART0_TX |
+| GND | GND      pin6  |
+| TXD | UART0_RX pin10 A17 |
+| RXD | UART0_TX pin8  A16  |
 
 #### Checkout serial name
 ```bash
@@ -66,7 +64,9 @@ System Boot setup:
 ```
 C.SCS/0/0.WD.URPL.USBI.USBEF.BS/EMMC.EMI/25000000/12000000.PS. E:PARAM1 magic (0x0)
 ```
-1. C = Clock
+1. C
+    - C: RISC-V Core Boot
+    - B: ARM    Core Boot
 2. SCS = System Control & Security
 3. /0/0 = Error code 0
 4. WD = Watchdog
