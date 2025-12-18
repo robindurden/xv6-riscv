@@ -16,4 +16,7 @@ Nov
 - Lab1: Boot xv6
 #### 2025-12-09
 - Getting started for Milk-V Duo S
-#### 2025-12-10
+#### 2025-12-17
+- Boot Unmatched Board
+#### 2025-12-18
+- Finish Lab1

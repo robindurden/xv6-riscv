@@ -19,25 +19,7 @@ make GRADEFLAGS=sleep grade
  VIEW TEST OUTPUT LOGS
 ========================
 cat xv6.out.sleep
-cat xv6.out.sleep_no_args
-cat xv6.out.sleep_returns
-cat xv6.out.sleep_makes_syscall
-
-cat xv6.out.find_curdir
-cat xv6.out.find_subdir
-cat xv6.out.find_recursive
-cat xv6.out.find_exec
-cat xv6.out.find_exec_args
-cat xv6.out.test_find_sh
-
-cat xv6.out.sixfive_test
-cat xv6.out.sixfive_readme
-cat xv6.out.sixfive_all
-
-cat xv6.out.memdump_examples
-cat xv6.out.memdump_formats
-
-cat xv6.out.time
+......
 
 ========================
  FILE SYSTEM IMAGE

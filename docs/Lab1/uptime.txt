@@ -1,0 +1,4 @@
+Clock Interrupt
+
+ticks++
+OS swift to others process
