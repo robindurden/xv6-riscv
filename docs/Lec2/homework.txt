@@ -1,0 +1,50 @@
+Consider the following fragment of C code, on a 32-bit system:
+
+struct f {
+  int a;
+  char b[32];
+};
+
+struct g {
+  char *c;
+  int d[4];
+};
+
+struct h {
+  struct f *f;
+  struct g g;
+};
+
+struct h *h;
+
+Suppose that the value of h is 0x1000. 
+Figure out the values of the following expressions, 
+or explain why it's not possible to figure them out:
+
+1. &h->g.d[2]
+2. &h->f->a
+3. &h->g.c
+4. &h->g.c[10]
+
+answer:
+32-bit system
+int = 4 bytes
+char = 1 byte
+char * = 4 bytes
+
+sizeof(h) == 4 : 0x1000
+0x1000 -> f (4 bytes)
+0x1004 -> g (20 bytes)
+
+&h->g.c[10]
+==
+&(*(h->g.c + 10))
+
+1. &h->g.d[2]
+0x1010
+2. &h->f->a
+unknow, *f's value is unreachable
+3. &h->g.c
+0x1004
+4. &h->g.c[10]
+0x100e❌

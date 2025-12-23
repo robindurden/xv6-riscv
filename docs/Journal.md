@@ -20,3 +20,12 @@ Nov
 - Boot Unmatched Board
 #### 2025-12-18
 - Finish Lab1
+#### 2025-12-19
+- Lec2 video
+#### 2025-12-20
+- Lec2 source code reading
+#### 2025-12-21
+- Lec2 examples
+#### 2025-12-22
+- Lec2 pointer, homework
+#### 2025-12-23
