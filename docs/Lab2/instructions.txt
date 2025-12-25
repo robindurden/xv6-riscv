@@ -1,0 +1,43 @@
+┌───────────┬──────────┬────────────────────────────────────┐
+│ Category  │ Instr    │ Meaning / What to know             │
+├───────────┼──────────┼────────────────────────────────────┤
+│ Load      │ ld       │ Load 64-bit value (uint64 /pointer)│
+│           │ lw       │ Load 32-bit value (int)            │
+│           │ lbu      │ Load 8-bit unsigned                │
+│           │ lb       │ Load 8-bit signed                  │
+├───────────┼──────────┼────────────────────────────────────┤
+│ Store     │ sd       │ Store 64-bit value                 │
+│           │ sw       │ Store 32-bit value                 │
+│           │ sb       │ Store 8-bit value                  │
+├───────────┼──────────┼────────────────────────────────────┤
+│ Immediate │ li       │ Load immediate (pseudo-instruction)│
+│           │ addi     │ Register + immediate               │
+├───────────┼──────────┼────────────────────────────────────┤
+│ Arithmetic│ add      │ Register addition                  │
+│           │ sub      │ Register subtraction               │
+│           │ mul      │ Multiply (occasional)              │
+├───────────┼──────────┼────────────────────────────────────┤
+│ Control   │ jal      │ Function call / jump-and-link      │
+│           │ ret      │ Return (pseudo-instruction)        │
+│           │ beq/bne  │ Branch if equal / not equal        │
+├───────────┼──────────┼────────────────────────────────────┤
+│ Syscall   │ ecall    │ Enter kernel (user → supervisor)   │
+├───────────┼──────────┼────────────────────────────────────┤
+│ Trap      │ sret     │ Return to user (supervisor → user) │
+├───────────┼──────────┼────────────────────────────────────┤
+│ Address   │ auipc    │ PC-relative address calculation    │
+│           │ lui      │ Load upper immediate               │
+├───────────┼──────────┼────────────────────────────────────┤
+│ Registers │ zero     │ x0, always 0                       │
+│           │ sp       │ Stack pointer                      │
+│           │ ra       │ Return address                     │
+│           │ a0–a7    │ Arguments / syscall number (a7)    │
+└───────────┴──────────┴────────────────────────────────────┘
+
+One-line mental rules (remember these)
+lw / ld   → may page-fault
+ecall     → user → kernel
+sret      → kernel → user
+a7        → syscall number
+a0        → return value
+zero (x0) → always 0 (accessing 0(zero) == NULL)

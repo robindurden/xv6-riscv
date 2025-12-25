@@ -1,0 +1,12 @@
+Suppose that an xv6 kernel has used up all of the struct proc entries in the struct proc proc[NPROC] table (i.e., none of them have state == UNUSED). 
+
+What happens if one of the processes calls exec()?
+The process will loaded the file to replace it's old program, execed.
+
+What happens if one of the processes calls fork()?
+fork syscall fail
+
+What happens if one of the processes calls kill() on an existing PID and then calls fork()?
+the existing process will be released,then fork success.❌
+kill() does not immediately free a struct proc.
+If the killed process has not exited yet, fork() will still fail.

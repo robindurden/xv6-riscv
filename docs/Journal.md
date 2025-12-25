@@ -1,9 +1,9 @@
-Nov
+### Nov
 #### 2025-11-28
 - Read Lec1 slides
-- Watch media: AT&T Archives: The UNIX Operating System https://b23.tv/aC60SCP
+- Watch media: AT&T Archives: The UNIX Operating System
 #### 2025-11-29
-- Watch Lec1 video 30 min https://www.bilibili.com/video/BV19k4y1C7kA
+- Watch Lec1 video 30 min
 - Write Makefile.md to explain Makefile.
 - Run xv6 on macOS
 ### Dec
@@ -21,7 +21,7 @@ Nov
 #### 2025-12-18
 - Finish Lab1
 #### 2025-12-19
-- Lec2 video
+- Lec3 video
 #### 2025-12-20
 - Lec2 source code reading
 #### 2025-12-21
@@ -29,3 +29,9 @@ Nov
 #### 2025-12-22
 - Lec2 pointer, homework
 #### 2025-12-23
+- Lec3 txt, homework
+- Lab2 gdb
+#### 2025-12-24
+- Lab2 gdb, syscall
+#### 2025-12-25
+- Lab2 syscall, attack
