@@ -1,0 +1,5 @@
+A1. What is one feature/subsystem that's implemented in the kernel in xv6, but is implemented in userspace (i.e., missing from the kernel) in L4? 
+Q1: File system.
+
+A2. What Unix operations are particularly slow on an L4-based Linux system, and why?
+Q2: write to /dev/null, case the Unix syscall takes two IPC operations, and Unix syscall is nod designed for performance.

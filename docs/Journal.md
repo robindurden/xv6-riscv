@@ -35,3 +35,8 @@
 - Lab2 gdb, syscall
 #### 2025-12-25
 - Lab2 syscall, attack
+#### 2025-12-29
+- finish Lab2
+#### 2025-12-30
+- Read paper, done homework4
+- Lec5 page tables

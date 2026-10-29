@@ -1,3 +1,6 @@
+我认为此题为达到通过目的 是可以不择手段的
+
+
 - kernel/sysproc.c
     - uint64 sys_sbrk(void)
 - user/ulib.c
@@ -14,6 +17,13 @@
 sh
     secret xyzzy
     kexit
+
+exit()
+ ├─ uvmfree(p->pagetable, p->sz)
+ │   ├─ free user page（PTE -> phy page）
+ │   └─ free pagetable page（pahetable self）
+ └─ freepagetable()
+
 kwait
 freeproc
 kfree(pa)
@@ -22,4 +32,8 @@ kfree(pa)
 attack
     kalloc
     
+```
+
+```
+freelist is LIFO
 ```
